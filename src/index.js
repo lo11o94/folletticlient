@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Extract from './Extract';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function NotFound() {
+    return <h3 style={{marginLeft: 10, fontStyle: 'italic', fontWeight: 'bold'}}>404 Not Found</h3>
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render((
+    <BrowserRouter>
+        <Switch>
+            <Route exact path={"/folletti/"} component={App}/>
+            <Route exact path={"/estrazione/"} component={Extract}/>
+            <Route path='*' component={NotFound} />
+        </Switch>
+    </BrowserRouter>
+), document.getElementById('root'));
