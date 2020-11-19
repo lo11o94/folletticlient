@@ -12,7 +12,7 @@ function NotFound() {
 render((
     <BrowserRouter>
         <Switch>
-            <Route exact path={"/folletti/"} component={App}/>
+            <Route exact path={"/folletticlient/"} component={App}/>
             <Route exact path={"/estrazione/"} component={Extract}/>
             <Route path='*' component={NotFound} />
         </Switch>
