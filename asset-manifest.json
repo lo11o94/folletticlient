@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/folletti/static/js/main.914ee267.chunk.js",
-    "main.js.map": "/folletti/static/js/main.914ee267.chunk.js.map",
-    "runtime-main.js": "/folletti/static/js/runtime-main.b40cf182.js",
-    "runtime-main.js.map": "/folletti/static/js/runtime-main.b40cf182.js.map",
-    "static/css/2.ea9b1cc9.chunk.css": "/folletti/static/css/2.ea9b1cc9.chunk.css",
-    "static/js/2.842fe254.chunk.js": "/folletti/static/js/2.842fe254.chunk.js",
-    "static/js/2.842fe254.chunk.js.map": "/folletti/static/js/2.842fe254.chunk.js.map",
-    "index.html": "/folletti/index.html",
-    "static/css/2.ea9b1cc9.chunk.css.map": "/folletti/static/css/2.ea9b1cc9.chunk.css.map",
-    "static/js/2.842fe254.chunk.js.LICENSE.txt": "/folletti/static/js/2.842fe254.chunk.js.LICENSE.txt"
+    "main.js": "/folletticlient/static/js/main.e8302a4e.chunk.js",
+    "main.js.map": "/folletticlient/static/js/main.e8302a4e.chunk.js.map",
+    "runtime-main.js": "/folletticlient/static/js/runtime-main.5ed5932a.js",
+    "runtime-main.js.map": "/folletticlient/static/js/runtime-main.5ed5932a.js.map",
+    "static/css/2.ea9b1cc9.chunk.css": "/folletticlient/static/css/2.ea9b1cc9.chunk.css",
+    "static/js/2.d23dedb1.chunk.js": "/folletticlient/static/js/2.d23dedb1.chunk.js",
+    "static/js/2.d23dedb1.chunk.js.map": "/folletticlient/static/js/2.d23dedb1.chunk.js.map",
+    "index.html": "/folletticlient/index.html",
+    "static/css/2.ea9b1cc9.chunk.css.map": "/folletticlient/static/css/2.ea9b1cc9.chunk.css.map",
+    "static/js/2.d23dedb1.chunk.js.LICENSE.txt": "/folletticlient/static/js/2.d23dedb1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b40cf182.js",
+    "static/js/runtime-main.5ed5932a.js",
     "static/css/2.ea9b1cc9.chunk.css",
-    "static/js/2.842fe254.chunk.js",
-    "static/js/main.914ee267.chunk.js"
+    "static/js/2.d23dedb1.chunk.js",
+    "static/js/main.e8302a4e.chunk.js"
   ]
 }
