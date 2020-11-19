@@ -18,7 +18,7 @@ function FollettiClient({username}) {
     const [room, setRoom] = useState('');
     const [users, setUsers] = useState('');
     const [extractions, setExtractions] = useState('');
-    const ENDPOINT = "http://127.0.0.1:8080";
+    const ENDPOINT = "https://follettiserver.herokuapp.com/";
 
     useEffect(() => {
         const name = username
