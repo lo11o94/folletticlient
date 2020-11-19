@@ -18,9 +18,9 @@ class App extends Component {
 
     Redirect() {
         if (this.state.redirect) {
-            window.history.pushState(this.state.username, 'FOLLETTI', '/estrazione/')
+            window.history.pushState(this.state.username, 'FOLLETTI', '/folletticlient/estrazione/')
             return <Redirect to={{
-                pathname: '/estrazione/',
+                pathname: '/folletticlient/estrazione/',
                 state: { username: this.state.username }
             }}/>
         }
