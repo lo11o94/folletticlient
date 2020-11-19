@@ -40,7 +40,7 @@ class App extends Component {
         return (
             <div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: 25}}>
                 {this.Redirect()}
-                <Form style={{width: '20%'}} onFinish={(values) => this.handleSubmit(values)}>
+                <Form style={{width: 300}} onFinish={(values) => this.handleSubmit(values)}>
                     <Form.Item
                         id="username"
                         name="username"

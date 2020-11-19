@@ -13,7 +13,7 @@ render((
     <BrowserRouter>
         <Switch>
             <Route exact path={"/folletticlient/"} component={App}/>
-            <Route exact path={"/estrazione/"} component={Extract}/>
+            <Route exact path={"/folletticlient/estrazione/"} component={Extract}/>
             <Route path='*' component={NotFound} />
         </Switch>
     </BrowserRouter>

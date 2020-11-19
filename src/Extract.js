@@ -112,7 +112,7 @@ class Extract extends Component {
             <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
             {
                 this.state.enable == true ?
-                    <div style={{display: 'flex', justifyContent: 'center', width: '20%'}}>
+                    <div style={{display: 'flex', justifyContent: 'center', width: 300}}>
                         <div style={{display: 'flex', flexDirection: "column", justifyContent: 'center'}}>
                             <Row style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: 25}}>
                                 <Text style={{fontWeight: "bold"}}>{this.state.username}</Text>
