@@ -19,6 +19,7 @@ function FollettiClient({username}) {
     const [users, setUsers] = useState('');
     const [extractions, setExtractions] = useState('');
     const ENDPOINT = "https://follettiserver.herokuapp.com/";
+    const [logged, setLogged] = useState('');
 
     useEffect(() => {
         const name = username
@@ -27,6 +28,7 @@ function FollettiClient({username}) {
 
         setRoom(room);
         setName(name);
+        setLogged(false);
 
         socket.emit('join', { name, room }, (error) => {
             if(error) {
@@ -48,6 +50,12 @@ function FollettiClient({username}) {
         });
     }, []);
 
+    useEffect(() => {
+        socket.on("alreadylogged", () => {
+            setLogged(true)
+        });
+    }, []);
+
     const Users = (users) => {
         let usernames = []
 
@@ -62,13 +70,20 @@ function FollettiClient({username}) {
         return usernames
     }
 
+    const AlreadyLogged = (logged) => {
+        if(logged == true) {
+            return <Text style={{color: "red"}}>Login già effettuato.</Text>
+        }
+        return ""
+    }
+
     return (
         <div>
             {
                 users.length > 0 == true ?
                     Users(users)
                 :
-                    <Text style={{color: "red"}}>Login già effettuato.</Text>
+                    AlreadyLogged(logged)
             }
         </div>
     );
